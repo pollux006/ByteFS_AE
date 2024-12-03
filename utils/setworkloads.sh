@@ -38,7 +38,7 @@ mvn -pl site.ycsb:rocksdb-binding -am clean package
 cd ..
 
 
-
+exit 0
 
 sudo apt-get install openjdk-17-jdk -y
 # include java in path
