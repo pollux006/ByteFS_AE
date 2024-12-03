@@ -3,8 +3,8 @@
 
 #include "../../../ssd/ftl.h"
 
-#define BYTEFS_PA_START (BYTEFS_PA_START) // start from 4G
-#define BYTEFS_PA_END   (BYTEFS_PA_END) // end at 6G 
+// #define BYTEFS_PA_START (BYTEFS_PA_START) // start from 4G
+// #define BYTEFS_PA_END   (BYTEFS_PA_END) // end at 6G 
 
 // configuration -- end
 

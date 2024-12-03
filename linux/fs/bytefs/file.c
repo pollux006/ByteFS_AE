@@ -221,7 +221,7 @@ static int bytefs_open(struct inode *inode, struct file *filp)
 {
 	int ret;
 	ret = generic_file_open(inode, filp);
-	bytefs_open(filp);
+	bytefs_open_init(filp);
 	return ret;
 }
 

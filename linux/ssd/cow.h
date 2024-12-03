@@ -126,7 +126,7 @@ static inline void bytefs_wr_private(filp_private_t* fp, fmapping_t* fmap) {
 int64_t bytefs_cache_init(void); 
 // void cow_unit_test(void);
 
-int64_t bytefs_open(struct file* filp);
+int64_t bytefs_open_init(struct file* filp);
 
 int64_t bytefs_pgcache_rd(struct file* filp, uint64_t st, uint64_t ed, char __user *buf);
 

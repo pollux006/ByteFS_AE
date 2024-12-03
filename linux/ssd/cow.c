@@ -815,7 +815,7 @@ int64_t bytefs_cache_reset(void) {
 EXPORT_SYMBOL(bytefs_cache_reset);
 
 
-int64_t bytefs_open(struct file* filp) {
+int64_t bytefs_open_init(struct file* filp) {
     filp->private_data = kmalloc(sizeof(filp_private_t), GFP_ATOMIC);
     if (NULL == filp->private_data) {
         return -1;
@@ -835,7 +835,7 @@ int64_t bytefs_open(struct file* filp) {
 
     return 0;
 }
-EXPORT_SYMBOL(bytefs_open);
+EXPORT_SYMBOL(bytefs_open_init);
 
 /**
  * @brief bytefs version of getting a contiguous (with respect to file mapping) mapped pages,
